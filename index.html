@@ -1,21 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>
-Ethan Heathcote </title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Personal website for Ethan Heathcote">
-<style>
-body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
-h1{font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
-p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Heathcote | Software Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #fff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-<h1>Ethan Heathcote</h1>
-<p>Computer Science Student (University of Utah)</p>
-<p></p>
-<p>Project:</p>
-<p><a href="https://youtu.be/aweHEjvpvEE">Polygon Game</a></p>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Ethan Heathcote</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Aspiring Computer Science professional with a strong foundation in software development and algorithm design. Eager to contribute to innovative projects and gain hands-on experience in Software Engineering, AI, and Machine Learning.</p>
+            <h2>Education</h2>
+            <p>Bachelor of Science in Computer Science, GPA: 3.98 - University of Utah</p>
+            <p>Film Production Technician: AAS - Salt Lake Community College</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Spreadsheet Software Development | C#</h3>
+                <p>Engineered the foundational logic for a spreadsheet application using MVC architecture and implemented core functionalities including cell re-evaluation based on dependencies.</p>
+            </div>
+            <div class="project">
+                <h3>Multiplayer Snake Game Server Development | C#</h3>
+                <p>Built a multi-threaded game server for a multiplayer snake game, handling real-time state synchronization across clients and implementing game logic in a .NET 7 console application.</p>
+            </div>
+            <div class="project">
+                <h3>Polygon Memory Game | Java</h3>
+                <p>Developed a Java-based application utilizing directed graphs for dynamic rendering of customizable polygons, enhancing user interaction through a graphical interface.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>Feel free to reach out via email at <a href="mailto:ethanheathcote@gmail.com">ethanheathcote@gmail.com</a> or visit my <a href="https://github.com/eheathco">GitHub profile</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ethan Heathcote</p>
+        </div>
+    </footer>
 </body>
 </html>
